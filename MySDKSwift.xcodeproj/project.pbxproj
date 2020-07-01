@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D16977CF24AC798D0051A672 /* MySDKSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = D16977CD24AC798D0051A672 /* MySDKSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D16977D624AC79C60051A672 /* MySDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16977D524AC79C60051A672 /* MySDK.swift */; };
+		D16977F824AC99410051A672 /* NetStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16977F724AC99410051A672 /* NetStatus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +17,7 @@
 		D16977CD24AC798D0051A672 /* MySDKSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySDKSwift.h; sourceTree = "<group>"; };
 		D16977CE24AC798D0051A672 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D16977D524AC79C60051A672 /* MySDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySDK.swift; sourceTree = "<group>"; };
+		D16977F724AC99410051A672 /* NetStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetStatus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				D16977CD24AC798D0051A672 /* MySDKSwift.h */,
+				D16977F724AC99410051A672 /* NetStatus.swift */,
 				D16977D524AC79C60051A672 /* MySDK.swift */,
 				D16977CE24AC798D0051A672 /* Info.plist */,
 			);
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D16977D624AC79C60051A672 /* MySDK.swift in Sources */,
+				D16977F824AC99410051A672 /* NetStatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +269,7 @@
 		D16977D324AC798D0051A672 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -274,6 +279,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = MySDKSwift/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -291,6 +297,7 @@
 		D16977D424AC798D0051A672 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -300,6 +307,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = MySDKSwift/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
