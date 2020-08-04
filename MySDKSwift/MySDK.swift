@@ -10,6 +10,7 @@ import Foundation
 
 public class MySDK {
     public class func logToConsole(msg: String) {
+        print("New version Update on Git")
         print(msg);
     }
 }
